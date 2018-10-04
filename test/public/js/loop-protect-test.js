@@ -11,5 +11,6 @@ test('LoopProtect injection', function(t) {
   t.true(
     loopProtect('  loop1:\n   while(true) {\n\n}').indexOf('loop1') > 0,
     'Should keep loop label intact if not lined up with loop.'
-  );
-});
+    );
+  }
+);
